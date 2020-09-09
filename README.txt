@@ -1,0 +1,1 @@
+Game in Android Studio This is a classic Tic Tac Toe, and the same ruls apply, I wrote the game in java, gameplay: you can play against the computer or against your friend.
