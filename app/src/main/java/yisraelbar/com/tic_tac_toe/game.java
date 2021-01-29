@@ -214,7 +214,6 @@ public class game {
         }
         //computer lose
         if (!myturn && checkIfWin(justForCheck,"x")) {
-
             return false;
         }
         //check if all the spot are been full
@@ -338,10 +337,12 @@ public class game {
               //level 0 is the most difficult, check if you can win in one play
                 //if not it's check if you can lose in one play, and if not -find the best play
                 case 0:
+                    //if 0 can win in one play find the index for the win
                     if (goingToLooseTo("o")){
                         blockCell=block("o");
                         return blockCell;
                     }
+                    //if o is going to loose find the index that x needs for the win and put there an 'o'
                     if (goingToLooseTo("x")){
                         blockCell=block("x");
                         return blockCell;
